@@ -31,7 +31,7 @@ It helps users convert temperature between Celsius, Fahrenheit and Kelvin.
 5. View all conversion results.
 
 ## Project Files
-- temperature-converter.html
+- temperature.converter.html
 - style.css
 - script.js
 - README.md
