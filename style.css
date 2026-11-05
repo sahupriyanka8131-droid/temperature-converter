@@ -1,0 +1,254 @@
+
+/* Universal Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    padding: 30px 15px;
+}
+
+/* Main Container */
+
+.main-container {
+    width: 100%;
+    max-width: 850px;
+    margin: auto;
+}
+
+/* Header Section */
+
+header {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 35px;
+    margin-bottom: 12px;
+}
+
+header p {
+    font-size: 17px;
+    color: #eeeeee;
+}
+
+/* Converter Card */
+
+.converter-card {
+    background-color: white;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.converter-card h2 {
+    text-align: center;
+    color: #333333;
+    margin-bottom: 25px;
+}
+
+/* Input Group */
+
+.input-group {
+    margin-bottom: 22px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+/* Input and Select */
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    background-color: #ffffff;
+    transition: 0.3s;
+}
+
+/* Input Focus */
+
+.input-group input:focus,
+.input-group select:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 5px rgba(102, 126, 234, 0.4);
+}
+
+/* Button Group */
+
+.button-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+/* Convert Button */
+
+.convert-btn {
+    flex: 2;
+    padding: 14px;
+    background-color: #536dfe;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.convert-btn:hover {
+    background-color: #304ffe;
+    transform: translateY(-2px);
+}
+
+/* Reset Button */
+
+.reset-btn {
+    flex: 1;
+    padding: 14px;
+    background-color: #ff5252;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.reset-btn:hover {
+    background-color: #e53935;
+    transform: translateY(-2px);
+}
+
+/* Error Message */
+
+#error-message {
+    color: #d50000;
+    background-color: #ffebee;
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 18px;
+    text-align: center;
+    font-size: 14px;
+    display: none;
+}
+
+/* Result Section */
+
+.result-section {
+    margin-top: 35px;
+    padding-top: 20px;
+    border-top: 2px solid #eeeeee;
+}
+
+.result-section h2 {
+    margin-bottom: 20px;
+}
+
+/* Result Box */
+
+.result-box {
+    background-color: #f1f4ff;
+    padding: 18px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border-left: 5px solid #536dfe;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.result-box h3 {
+    color: #333333;
+    font-size: 17px;
+}
+
+.result-box p {
+    color: #536dfe;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Formula Section */
+
+.formula-section {
+    background-color: white;
+    margin-top: 25px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.formula-section h2 {
+    text-align: center;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.formula-section p {
+    background-color: #f3f3ff;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    color: #444444;
+    font-size: 15px;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    color: white;
+    margin-top: 25px;
+    padding: 15px;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+
+@media screen and (max-width: 600px) {
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    .converter-card {
+        padding: 22px;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    .result-box {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .formula-section {
+        padding: 18px;
+    }
+
+}
